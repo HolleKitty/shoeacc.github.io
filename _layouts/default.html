@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>网站建设中</title>
+    <title>{{ site.title }}</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
 
         body {
-            font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, -apple-system, sans-serif;
+            font-family: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", system-ui, sans-serif;
             background: #f5f3f0;
             color: #4a4540;
             display: flex;
@@ -60,18 +60,14 @@
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>网站建设中</h1>
+        <h1>{{ site.title }}</h1>
         <div class="divider"></div>
-        <div class="message">
-            敬请期待。
-        </div>
+        <div class="message">{{ site.description }}</div>
     </div>
 
     <div class="footer">
-        <a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2025435217号-1</a>
+        <a href="{{ site.footer_link }}" target="_blank" rel="noopener">{{ site.footer_text }}</a>
     </div>
-
 </body>
 </html>
